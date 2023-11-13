@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UTS</title>
+    <style>
+      input.ukuran {
+        width: 60px;
+      }
+      td.jarak {
+        text-align: left;
+      }
+      td {
+        padding: 4px;
+        vertical-align: top;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      fieldset {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Daftar Alumni</legend>
+        <table>
+          <tr>
+            <td>Cari Nama Alumni</td>
+            <td>
+              <input type="search" placeholder="search" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="studi">Studi</label></td>
+            <td>
+              <select id="studi" name="studi">
+                <option value="">Pilih</option>
+                <option value="si">Sistem Informatika</option>
+                <option value="ti">Teknik Informatika</option>
+                <option value="bd">Bisnis Digital</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="thnMasuk">Tahun Masuk</label></td>
+            <td><input type="number" class="ukuran" name="thnMasuk" /></td>
+          </tr>
+          <tr>
+            <td><label for="thnLulus">Tahun Lulus</label></td>
+            <td><input type="number" class="ukuran" name="thnLulus" /></td>
+          </tr>
+          <tr>
+            <td><label for="linkedin">Alamat LinkedIn</label></td>
+            <td><input type="text" name="linkedin" /></td>
+          </tr>
+          <tr>
+            <td><label for="pekerjaaan">Pekerjaaan</label></td>
+            <td><input type="text" name="pekerjaaan" /></td>
+          </tr>
+          <tr>
+            <td><label for="alamatkantor">Alamat Kantor</label></td>
+            <td>
+              <textarea
+                type="text"
+                name="alamatkantor"
+                id="alamatkantor"
+                cols="21"
+                rows="4"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pengurus">Pengurus Alumni</label></td>
+            <td>
+              <input type="radio" name="pengurus" value="ya" required />Ya
+              <input type="radio" name="pengurus" value="tidak" />Tidak
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="jarak">
+              <button type="submit">Simpan</button>
+              <button type="reset">Riset</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
